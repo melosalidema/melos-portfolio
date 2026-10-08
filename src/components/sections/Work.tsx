@@ -10,7 +10,7 @@ export function Work() {
         <SectionHead
           index="01"
           eyebrow="Selected work"
-          title="Six products, shipped and live."
+          title="Eight products, shipped and live."
           lede="Marketplaces, storefronts and platforms I designed and built end to end. Open a case study for the story behind it."
           aside={<MetaLabel>2026 — live</MetaLabel>}
         />

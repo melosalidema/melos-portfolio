@@ -29,6 +29,9 @@ export function Footer() {
               <ArrowLink href={site.links.linkedin} external className="text-body pointer-fine:min-h-0">
                 LinkedIn
               </ArrowLink>
+              <ArrowLink href={site.links.instagram} external className="text-body pointer-fine:min-h-0">
+                Instagram
+              </ArrowLink>
             </div>
 
             <div className="flex flex-col items-start gap-2">

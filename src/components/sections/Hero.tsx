@@ -127,7 +127,7 @@ export function Hero() {
               )}
             </AnimatePresence>
           </MetaLabel>
-          <MetaLabel className="hidden md:block">06 projects — 2026</MetaLabel>
+          <MetaLabel className="hidden md:block">08 projects — 2026</MetaLabel>
         </motion.div>
       </div>
     </section>

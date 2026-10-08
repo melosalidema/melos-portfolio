@@ -61,40 +61,6 @@ export const projects: Project[] = [
     index: "01",
   },
   {
-    slug: "nura-skin",
-    name: "NŪRA Skin",
-    tagline: "A clinical skincare storefront concept",
-    type: "E-commerce front-end",
-    year: "2026",
-    role: "Design & front-end development",
-    summary:
-      "A production-quality storefront for a fictional clinical skincare brand — product pages, a routine builder, and a full mobile shopping experience.",
-    description: [
-      "NŪRA is a complete storefront concept for a fictional clinical skincare brand — built to demonstrate what e-commerce UX feels like when every detail is considered.",
-      "Eight products, each with its own variants and stock; a routine builder that assembles a sequenced routine and prices the bundle; a cart drawer that survives navigation; and an editorial design system — parchment, Garamond, zero radius — that sets product data like a ledger, not a dashboard.",
-    ],
-    features: [
-      {
-        title: "Routine builder",
-        text: "A three-question quiz assembles a sequenced routine, explains each step and applies 15% bundle pricing.",
-      },
-      {
-        title: "Commerce that behaves",
-        text: "Cart drawer with localStorage persistence, variant pricing and stock, quick-add from any grid.",
-      },
-      {
-        title: "Accessible by default",
-        text: "Keyboard-operable drawer and menu with focus trapping, aria-live updates, reduced-motion support.",
-      },
-    ],
-    stack: ["HTML", "CSS", "JavaScript"],
-    live: "https://nuraskincare-dev.netlify.app/",
-    image: "/work/nura-skin.webp",
-    imageMobile: "/work/nura-skin-mobile.webp",
-    alt: "NŪRA Skin homepage — 'Know your skin better' in an editorial serif over warm product photography",
-    index: "02",
-  },
-  {
     slug: "fixpoint",
     name: "Fixpoint",
     tagline: "A multi-app AI agent that proves its work",
@@ -131,40 +97,82 @@ export const projects: Project[] = [
     image: "/work/fixpoint.webp",
     imageMobile: "/work/fixpoint-mobile.webp",
     alt: "Fixpoint operator console — a dark interface showing an agent run with approvals, verification and audit trail",
-    index: "03",
+    index: "02",
   },
   {
-    slug: "codevio",
-    name: "Codevio",
-    tagline: "The agency platform for our own studio",
-    type: "Marketing site",
+    slug: "casa-sole",
+    name: "Casa Sole",
+    tagline: "A boutique hotel site built around the booking",
+    type: "Hotel website",
     year: "2026",
-    role: "Front-end development",
+    role: "Design & front-end development",
     summary:
-      "A responsive platform presenting Codevio's web development services — with an interactive animation layer and 3D visuals.",
+      "A complete hotel website — rooms and room details, experiences, restaurant, story and contact — with a booking widget that quotes and confirms without leaving the page.",
     description: [
-      "Codevio is the agency platform for our own studio — the place where client work starts with a conversation about what we build and how.",
-      "A React + Vite front end with a Tailwind v4 token system, GSAP and Motion for the animation layer, and React Three Fiber moments used sparingly — 3D as punctuation, never wallpaper.",
+      "Casa Sole is built like a stay: photography first, quiet motion, and a booking bar at the foot of the hero. The type sets over full-bleed coastal imagery and gets out of the way.",
+      "Eight routes cover the full guest journey — home, rooms, individual room pages, experiences, restaurant, story, contact and a 404 — built with React 19, TypeScript and Vite. The booking widget handles dates, guests, nightly quotes and availability logic, and the motion layer respects reduced-motion preferences.",
     ],
     features: [
       {
-        title: "Motion system",
-        text: "GSAP and Motion-driven reveals, marquee and hover states tuned to one easing language.",
+        title: "Full guest journey",
+        text: "Home, rooms, room detail, experiences, restaurant, story and contact — every page a guest needs before booking.",
       },
       {
-        title: "3D moments",
-        text: "React Three Fiber scenes used as punctuation points in the scroll, not as decoration.",
+        title: "Booking that computes",
+        text: "A widget with date and guest selection, nightly quotes, availability checks and a confirmation flow.",
       },
       {
-        title: "Design system",
-        text: "Tailwind CSS v4 tokens, Radix primitives, a single radius, and a type scale that holds up.",
+        title: "Photography-led",
+        text: "Full-bleed coastal imagery with type set over it — the property sells itself.",
+      },
+      {
+        title: "Tested like production",
+        text: "Vitest unit tests and Playwright end-to-end tests run against the built site.",
       },
     ],
-    stack: ["React", "Vite", "Tailwind CSS", "GSAP", "Motion", "Three.js"],
-    live: "https://codeviodev.netlify.app/",
-    image: "/work/codevio.webp",
-    imageMobile: "/work/codevio-mobile.webp",
-    alt: "Codevio homepage — a 3D lanyard badge suspended over a red and black split stage",
+    stack: ["React", "TypeScript", "Vite", "React Router", "Motion"],
+    live: "https://casasole.netlify.app/",
+    image: "/work/casa-sole.webp",
+    imageMobile: "/work/casa-sole-mobile.webp",
+    alt: "Casa Sole homepage — 'Find your own pace by the sea' in an italic serif over a coastal photograph seen through a cave opening",
+    index: "03",
+  },
+  {
+    slug: "geoland-kosova",
+    name: "Geo&Land Kosova",
+    tagline: "Website & CMS for a geoinformation company",
+    type: "Business site & CMS",
+    year: "2026",
+    role: "Design & full development",
+    summary:
+      "A complete website for a Prishtina geoinformation company — six disciplines, a register of documented projects, and a CMS the team runs themselves.",
+    description: [
+      "Geo&Land works in land administration, cadastre, GIS and remote sensing across Kosovo and the Balkans. The site had to read like a survey instrument, not a brochure — document-like registers, measured typography, and the company's own fieldwork imagery.",
+      "Every page carries a topographic contour texture generated for it, orthophoto plates are presented as documents, and a lightweight Python CMS with an admin interface, media handling and a content store lets the team publish projects and services without touching code.",
+    ],
+    features: [
+      {
+        title: "Project register",
+        text: "Documented projects, filterable by discipline, each opening into a detail view with its evidence.",
+      },
+      {
+        title: "Six disciplines, one system",
+        text: "Services presented as numbered accordions with scope, deliverables and sector fit for each discipline.",
+      },
+      {
+        title: "Built-in CMS",
+        text: "A Python CMS with admin authentication, media uploads and content storage — the site is run by the team.",
+      },
+      {
+        title: "Instrument-grade details",
+        text: "Live coordinates, mono data labels and per-page contour textures drawn from the subject matter itself.",
+      },
+    ],
+    stack: ["HTML", "CSS", "JavaScript", "Python", "Netlify"],
+    live: "https://geo-land.netlify.app/",
+    image: "/work/geo-land.webp",
+    imageMobile: "/work/geo-land-mobile.webp",
+    alt: "Geo&Land Kosova homepage — 'Ground truth, measured precisely' in bold grotesk over an orthophoto plate with topographic contour lines",
     index: "04",
   },
   {
@@ -206,6 +214,74 @@ export const projects: Project[] = [
     index: "05",
   },
   {
+    slug: "nura-skin",
+    name: "NŪRA Skin",
+    tagline: "A clinical skincare storefront concept",
+    type: "E-commerce front-end",
+    year: "2026",
+    role: "Design & front-end development",
+    summary:
+      "A production-quality storefront for a fictional clinical skincare brand — product pages, a routine builder, and a full mobile shopping experience.",
+    description: [
+      "NŪRA is a complete storefront concept for a fictional clinical skincare brand — built to demonstrate what e-commerce UX feels like when every detail is considered.",
+      "Eight products, each with its own variants and stock; a routine builder that assembles a sequenced routine and prices the bundle; a cart drawer that survives navigation; and an editorial design system — parchment, Garamond, zero radius — that sets product data like a ledger, not a dashboard.",
+    ],
+    features: [
+      {
+        title: "Routine builder",
+        text: "A three-question quiz assembles a sequenced routine, explains each step and applies 15% bundle pricing.",
+      },
+      {
+        title: "Commerce that behaves",
+        text: "Cart drawer with localStorage persistence, variant pricing and stock, quick-add from any grid.",
+      },
+      {
+        title: "Accessible by default",
+        text: "Keyboard-operable drawer and menu with focus trapping, aria-live updates, reduced-motion support.",
+      },
+    ],
+    stack: ["HTML", "CSS", "JavaScript"],
+    live: "https://nuraskincare-dev.netlify.app/",
+    image: "/work/nura-skin.webp",
+    imageMobile: "/work/nura-skin-mobile.webp",
+    alt: "NŪRA Skin homepage — 'Know your skin better' in an editorial serif over warm product photography",
+    index: "06",
+  },
+  {
+    slug: "codevio",
+    name: "Codevio",
+    tagline: "The agency platform for our own studio",
+    type: "Marketing site",
+    year: "2026",
+    role: "Front-end development",
+    summary:
+      "A responsive platform presenting Codevio's web development services — with an interactive animation layer and 3D visuals.",
+    description: [
+      "Codevio is the agency platform for our own studio — the place where client work starts with a conversation about what we build and how.",
+      "A React + Vite front end with a Tailwind v4 token system, GSAP and Motion for the animation layer, and React Three Fiber moments used sparingly — 3D as punctuation, never wallpaper.",
+    ],
+    features: [
+      {
+        title: "Motion system",
+        text: "GSAP and Motion-driven reveals, marquee and hover states tuned to one easing language.",
+      },
+      {
+        title: "3D moments",
+        text: "React Three Fiber scenes used as punctuation points in the scroll, not as decoration.",
+      },
+      {
+        title: "Design system",
+        text: "Tailwind CSS v4 tokens, Radix primitives, a single radius, and a type scale that holds up.",
+      },
+    ],
+    stack: ["React", "Vite", "Tailwind CSS", "GSAP", "Motion", "Three.js"],
+    live: "https://codeviodev.netlify.app/",
+    image: "/work/codevio.webp",
+    imageMobile: "/work/codevio-mobile.webp",
+    alt: "Codevio homepage — a 3D lanyard badge suspended over a red and black split stage",
+    index: "07",
+  },
+  {
     slug: "copper-kitchen",
     name: "Copper Kitchen",
     tagline: "Restaurant platform with an owner admin",
@@ -241,6 +317,6 @@ export const projects: Project[] = [
     image: "/work/copper-kitchen.webp",
     imageMobile: "/work/copper-kitchen-mobile.webp",
     alt: "Copper Kitchen homepage — a dark food photograph with elegant serif type and copper accents",
-    index: "06",
+    index: "08",
   },
 ];

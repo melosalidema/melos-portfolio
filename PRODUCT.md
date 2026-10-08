@@ -2,7 +2,7 @@
 
 ## Offer
 
-A personal portfolio and six case studies for **Melos Alidema**, full-stack developer (Pozheran, Kosovo). Goal: win full-stack roles and freelance work by showing real, live products and the craft behind them.
+A personal portfolio and eight case studies for **Melos Alidema**, full-stack developer (Pozheran, Kosovo). Goal: win full-stack roles and freelance work by showing real, live products and the craft behind them.
 
 ## Users & jobs
 
@@ -15,10 +15,10 @@ A personal portfolio and six case studies for **Melos Alidema**, full-stack deve
 ## Facts vs assumptions
 
 **Facts (verifiable):**
-- Six products: stayinkosovo.netlify.app, nuraskincare-dev.netlify.app, codeviodev.netlify.app, godrivekorea.com, copperkitchen.netlify.app — all verified live on 2026-10-08; Fixpoint's public artifact is its demo video (the repository is private).
+- Eight products: stayinkosovo.netlify.app, nuraskincare-dev.netlify.app, codeviodev.netlify.app, godrivekorea.com, copperkitchen.netlify.app and geo-land.netlify.app — all verified live on 2026-10-08. casasole.netlify.app is currently Netlify-protected (owner action required); Fixpoint's public artifact is its demo video (the repository is private).
 - stay-in-kosovo repository is public on GitHub.
 - Role history, education, certificates, languages: from the user's own CV.
-- Contact details: from the user's own CV.
+- Contact details: from the user's own CV; Instagram (https://www.instagram.com/melosalidema/) is portfolio-only and deliberately excluded from the CV.
 
 **Assumptions (flagged for confirmation before launch):**
 - "Available for work" status.

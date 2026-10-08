@@ -10,6 +10,7 @@ export const site = {
   links: {
     github: "https://github.com/melosalidema",
     linkedin: "https://www.linkedin.com/in/melosalidema",
+    instagram: "https://www.instagram.com/melosalidema/",
   },
   nav: [
     { label: "Work", href: "#work" },

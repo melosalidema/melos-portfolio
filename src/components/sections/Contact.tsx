@@ -2,6 +2,7 @@ import { MaskedLines } from "@/components/ui/MaskedLines";
 import { MetaLabel } from "@/components/ui/MetaLabel";
 import { Magnetic } from "@/components/ui/Magnetic";
 import { ArrowLink } from "@/components/ui/ArrowLink";
+import { GitHubIcon, InstagramIcon, LinkedInIcon } from "@/components/ui/icons";
 import { LocalTime } from "@/components/layout/LocalTime";
 import { site } from "@/content/site";
 
@@ -43,14 +44,30 @@ export function Contact() {
               external
               className="font-mono text-meta uppercase tracking-[0.14em] text-ink-2 hover:text-ink"
             >
-              GitHub
+              <span className="inline-flex items-center gap-2">
+                <GitHubIcon className="h-3.5 w-3.5" />
+                GitHub
+              </span>
             </ArrowLink>
             <ArrowLink
               href={site.links.linkedin}
               external
               className="font-mono text-meta uppercase tracking-[0.14em] text-ink-2 hover:text-ink"
             >
-              LinkedIn
+              <span className="inline-flex items-center gap-2">
+                <LinkedInIcon className="h-3.5 w-3.5" />
+                LinkedIn
+              </span>
+            </ArrowLink>
+            <ArrowLink
+              href={site.links.instagram}
+              external
+              className="font-mono text-meta uppercase tracking-[0.14em] text-ink-2 hover:text-ink"
+            >
+              <span className="inline-flex items-center gap-2">
+                <InstagramIcon className="h-3.5 w-3.5" />
+                Instagram
+              </span>
             </ArrowLink>
             <a
               href={`tel:${site.phone.replace(/\s/g, "")}`}
