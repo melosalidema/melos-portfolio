@@ -35,7 +35,7 @@ export function FieldCanvas() {
     const mouse = { x: -9999, y: -9999 };
     let particles: Particle[] = [];
 
-    const count = () => (window.innerWidth < 768 ? 70 : 180);
+    const count = () => (window.innerWidth < 768 ? 70 : 500);
 
     const spawn = (): Particle => ({
       x: Math.random() * width,
