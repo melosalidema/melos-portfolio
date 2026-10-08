@@ -22,7 +22,7 @@ export function Contact() {
 
         <p className="mt-8 max-w-[52ch] text-body text-ink-2">
           I&rsquo;m open to full-stack roles and freelance work — especially products with real
-          users and real constraints. Email is the fastest way to reach me; I answer within a day.
+          users and real constraints. Email is the fastest way to reach me.
         </p>
 
         <div className="mt-12 flex flex-col items-start gap-10">

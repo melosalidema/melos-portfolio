@@ -11,7 +11,7 @@ export function Skills() {
           index="04"
           eyebrow="Skills"
           title="The toolkit."
-          lede="What I reach for, and roughly in what order — from daily drivers to things I'm actively getting better at."
+          lede="What I reach for when I'm building, grouped by layer."
         />
 
         <div className="mt-14">
