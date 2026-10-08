@@ -22,10 +22,12 @@ export function MobileNav({
   open,
   onClose,
   triggerRef,
+  active,
 }: {
   open: boolean;
   onClose: () => void;
   triggerRef?: RefObject<HTMLButtonElement | null>;
+  active?: string | null;
 }) {
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const lastLinkRef = useRef<HTMLAnchorElement>(null);
@@ -102,23 +104,29 @@ export function MobileNav({
         data-lenis-prevent
         className="mx-auto flex h-full w-full max-w-[1500px] flex-col justify-center gap-2 overflow-y-auto px-gutter py-28"
       >
-        {site.nav.map((item, index) => (
-          <motion.div key={item.href} variants={itemVariants}>
-            <TransitionLink
-              ref={index === 0 ? firstLinkRef : undefined}
-              href={item.href}
-              onClick={() => {
-                // Start Lenis before closing so its anchor handler (window click
-                // listener, after React's) can smooth-scroll with the -64 offset.
-                getLenis()?.start();
-                onClose();
-              }}
-              className="inline-flex min-h-11 items-center font-display text-h2 font-medium tracking-[-0.01em] text-ink transition-colors hover:text-accent focus-visible:text-accent"
-            >
-              {item.label}
-            </TransitionLink>
-          </motion.div>
-        ))}
+        {site.nav.map((item, index) => {
+          const isActive = active === item.href.slice(1);
+          return (
+            <motion.div key={item.href} variants={itemVariants}>
+              <TransitionLink
+                ref={index === 0 ? firstLinkRef : undefined}
+                href={item.href}
+                aria-current={isActive ? "true" : undefined}
+                onClick={() => {
+                  // Start Lenis before closing so its anchor handler (window click
+                  // listener, after React's) can smooth-scroll with the -64 offset.
+                  getLenis()?.start();
+                  onClose();
+                }}
+                className={`inline-flex min-h-11 items-center font-display text-h2 font-medium tracking-[-0.01em] transition-colors focus-visible:text-accent ${
+                  isActive ? "text-accent" : "text-ink hover:text-accent"
+                }`}
+              >
+                {item.label}
+              </TransitionLink>
+            </motion.div>
+          );
+        })}
         <motion.div variants={itemVariants} className="rule mt-10 pt-6">
           <div className="flex flex-col gap-2 font-mono text-meta uppercase tracking-[0.14em] text-ink-3">
             <a

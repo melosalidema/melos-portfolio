@@ -1,6 +1,7 @@
 import { SectionHead } from "@/components/ui/SectionHead";
 import { MetaLabel } from "@/components/ui/MetaLabel";
 import { ProjectPlate } from "@/components/work/ProjectPlate";
+import { WorkIndex } from "@/components/work/WorkIndex";
 import { projects } from "@/content/projects";
 
 export function Work() {
@@ -20,6 +21,7 @@ export function Work() {
           ))}
         </div>
       </div>
+      <WorkIndex />
     </section>
   );
 }

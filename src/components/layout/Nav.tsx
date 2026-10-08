@@ -8,6 +8,7 @@ import { useSectionSpy } from "@/lib/useSectionSpy";
 import { site } from "@/content/site";
 
 const SECTION_IDS = ["work", "about", "experience", "contact"];
+const NO_SECTION_IDS: string[] = [];
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -15,7 +16,10 @@ export function Nav() {
   const triggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const onHome = pathname === "/";
-  const active = useSectionSpy(onHome ? SECTION_IDS : []);
+  const spy = useSectionSpy(onHome ? SECTION_IDS : NO_SECTION_IDS);
+  // On a case study the reader is inside the work section even though the
+  // home page spy has nothing to observe.
+  const active = spy ?? (pathname.startsWith("/work") ? "work" : null);
 
   const closeMenu = () => {
     getLenis()?.start();
@@ -100,7 +104,7 @@ export function Nav() {
           </div>
         </div>
       </header>
-      <MobileNav open={open} onClose={closeMenu} triggerRef={triggerRef} />
+      <MobileNav open={open} onClose={closeMenu} triggerRef={triggerRef} active={active} />
     </>
   );
 }

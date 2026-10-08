@@ -139,7 +139,10 @@ export function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  Available for work — Pozheran, Kosovo, <LocalTime />
+                  Available for work{" "}
+                  <span className="whitespace-nowrap">
+                    — Pozheran, Kosovo, <LocalTime />
+                  </span>
                 </motion.span>
               )}
             </AnimatePresence>

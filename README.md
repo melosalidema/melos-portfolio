@@ -24,7 +24,7 @@ src/components/layout/   Nav · MobileNav · Footer · SmoothScroll · Transitio
                          RouteCurtain · LocalTime
 src/components/ui/       Reveal · MaskedLines · MetaLabel · Magnetic · ArrowLink · SectionHead
 src/components/sections/ Hero · Work · About · Experience · Skills · Education · Contact
-src/components/work/     ProjectPlate (sticky numbered card)
+src/components/work/     ProjectPlate (sticky numbered card) · WorkIndex (fixed stack rail)
 src/content/        site.ts · projects.ts · resume.ts
 src/lib/            motion.ts · useLenis.ts · useSectionSpy.ts · useFinePointer.ts
 public/work/        project screenshots (WebP, captured from the live sites)

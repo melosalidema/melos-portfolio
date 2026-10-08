@@ -36,6 +36,7 @@
 - Eases: expo-out for reveals, cut for the curtain. Durations 0.3 / 0.6 / 0.9 / 1.2s. Stagger 0.06.
 - Reveals: y+opacity once (`Reveal`), line masks (`MaskedLines`), hover scale ≤1.03, magnetic CTAs ≤12px (fine pointers, reduced-motion gated), cover-wipe route transitions (`TransitionLink` + `RouteCurtain`).
 - **Reduced motion:** curtain, Lenis, entrance choreography and magnetic drift are all disabled; `MotionConfig reducedMotion="user"` remains as a second net.
+- **Work rail:** a fixed `01–08` index (`WorkIndex`, xl+ only) tracks the pinned plate while the work stack is active, with the current number in accent. Supplementary orientation only — aria-hidden, never interactive, moves only with the reader.
 - **No continuous animation runs anywhere.** Nothing moves unless the reader moves or a link is followed.
 
 ## Background
