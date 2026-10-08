@@ -21,25 +21,25 @@ npm run preview    # serve the built export
 src/app/            layout (fonts, metadata, chrome) · page (home) · globals.css tokens
                     work/[slug]/  case studies · sitemap.ts · robots.ts
 src/components/layout/   Nav · MobileNav · Footer · SmoothScroll · TransitionLink
-                         RouteCurtain · CustomCursor · FieldCanvas · LocalTime
+                         RouteCurtain · LocalTime
 src/components/ui/       Reveal · MaskedLines · MetaLabel · Magnetic · ArrowLink · SectionHead
-src/components/sections/ Hero · Marquee · Work · About · Experience · Skills · Education · Contact
+src/components/sections/ Hero · Work · About · Experience · Skills · Education · Contact
 src/components/work/     ProjectPlate (sticky numbered card)
 src/content/        site.ts · projects.ts · resume.ts
 src/lib/            motion.ts · useLenis.ts · useSectionSpy.ts · useFinePointer.ts
 public/work/        project screenshots (WebP, captured from the live sites)
-docs/plans/         implementation plan
+docs/plans/         implementation plan + refinement audit
 ```
 
 ## Before launch
 
-- Set `NEXT_PUBLIC_SITE_URL` to the absolute site URL (locally in `.env`, in Netlify under
-  Site configuration → Environment variables). Without it, canonical/OG URLs and the
-  sitemap fall back to relative paths.
-- Replace `/public/og.png` with a 1200×630 social image (a hero screenshot works).
+- `NEXT_PUBLIC_SITE_URL` (Netlify → Site configuration → Environment variables) overrides the
+  canonical origin; without it the site falls back to `https://melosalidema.netlify.app`.
+- **Casa Sole:** `https://casasole.netlify.app/` currently returns 401 (Netlify visitor
+  protection). Disable the protection so the live link works for visitors.
+- Replace `/public/og.png` with a newer 1200×630 social image if the hero changes.
 - `public/melos-alidema-cv.pdf` is the downloadable CV served by the hero CTA. When the CV
-  changes, regenerate `Melos_Alidema_CV.pdf` (from `OneDrive/Desktop/Melos_Alidema_CV.html`) and
-  copy it over this file.
+  changes, regenerate it and copy it over this file.
 
 ## Deploying (Netlify)
 

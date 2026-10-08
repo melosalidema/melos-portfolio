@@ -1,10 +1,10 @@
 # DESIGN.md — Melos Alidema Portfolio
 
-**Art direction sentence:** Editorial Engineer — a 2026 print monograph of a software studio: warm uncoated paper, deep ink, one deep-teal signal, hairline rules, numbered plates, mono captions; motion is slow and directed; the only background effects are a 4% grain and a sparse ink particle field.
+**Art direction sentence:** Editorial Engineer — a 2026 print monograph of a software studio: warm uncoated paper, deep ink, one deep-teal signal, hairline rules, numbered plates, mono captions; motion is slow and directed; the only background treatment is a 4% grain on the paper.
 
 **Brand attributes:** precise · warm · technical · calm · honest.
 
-**Anti-references:** dark-purple gradient SaaS landing; glassmorphism everywhere; template portfolio hero with gradient blob; progress-bar skill meters; fake stats/logos/testimonials; "passionate developer" copy.
+**Anti-references:** dark-purple gradient SaaS landing; glassmorphism everywhere; template portfolio hero with gradient blob; progress-bar skill meters; fake stats/logos/testimonials; "passionate developer" copy; moving tech marquees; custom cursor followers; drifting particle backgrounds.
 
 ## Palette (semantic tokens — `src/app/globals.css`)
 
@@ -34,12 +34,13 @@
 ## Motion language (`src/lib/motion.ts`)
 
 - Eases: expo-out for reveals, cut for the curtain. Durations 0.3 / 0.6 / 0.9 / 1.2s. Stagger 0.06.
-- Reveals: y+opacity once (`Reveal`), line masks (`MaskedLines`), hover scale ≤1.03, magnetic CTAs ≤12px, cover-wipe route transitions (`TransitionLink` + `RouteCurtain`), square custom cursor that becomes a "View" disc over work.
-- **Reduced motion:** canvas, cursor, Lenis, curtain and entrance choreography are all disabled; `MotionConfig reducedMotion="user"` remains as a second net.
+- Reveals: y+opacity once (`Reveal`), line masks (`MaskedLines`), hover scale ≤1.03, magnetic CTAs ≤12px (fine pointers, reduced-motion gated), cover-wipe route transitions (`TransitionLink` + `RouteCurtain`).
+- **Reduced motion:** curtain, Lenis, entrance choreography and magnetic drift are all disabled; `MotionConfig reducedMotion="user"` remains as a second net.
+- **No continuous animation runs anywhere.** Nothing moves unless the reader moves or a link is followed.
 
 ## Background
 
-`FieldCanvas`: ≤500 particles desktop / 70 mobile, ink at ≤0.11 alpha, 140px mouse repel, pauses when the tab is hidden, DPR ≤2. Plus a fixed 4% grain overlay (multiply). That is the entire background system — one field, one texture.
+One fixed 4% grain overlay (multiply) on the paper — the entire texture system. No canvas, no particles, no cursor follower; removed 2026-10-09 because they failed the "what does this express" test and contradicted the site's own "fast by default" principle.
 
 ## Responsive principles
 
@@ -48,8 +49,11 @@
 - Mobile nav: full-screen paper overlay with focus trap, Esc, scroll lock.
 - All type is clamp-scaled; grids collapse by re-composing (facts card, education columns), not by shrinking.
 
+## Case-study imagery
+
+Each case study carries two evidence plates: a full-bleed homepage capture, and one interior view of the live product (1440×900 WebP, lazy) with a mono caption stating exactly what it shows. Fixpoint (video-only) and Casa Sole (gated URL) carry no interior plate — no invented imagery.
+
 ## Intentional exceptions
 
-- The custom cursor is square — it belongs to the radius-0 language.
 - Hero shows the only visible grid; no other section repeats it.
 - Project plates carry their own accent (from the project screenshot) — the site accent stays teal.
