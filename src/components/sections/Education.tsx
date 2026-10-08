@@ -18,7 +18,7 @@ export function Education() {
                 className="rule flex flex-col gap-2 py-7 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
               >
                 <div>
-                  <h3 className="font-display text-h3 font-medium">{entry.school}</h3>
+                  <h3 className="font-display text-h3 font-medium text-balance">{entry.school}</h3>
                   <p className="mt-1 text-ink-2">{entry.program}</p>
                 </div>
                 <MetaLabel className="shrink-0 whitespace-nowrap">

@@ -184,7 +184,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
       <div className="px-gutter">
         <div className="mx-auto mt-section w-full max-w-[1500px] pb-24">
           <div className="rule pt-8">
-            <MetaLabel>Next project</MetaLabel>
+            <MetaLabel className="block">Next project</MetaLabel>
             <TransitionLink
               href={`/work/${next.slug}`}
               className="group mt-4 inline-flex items-center gap-6"

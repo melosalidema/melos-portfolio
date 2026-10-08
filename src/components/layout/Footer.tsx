@@ -37,7 +37,7 @@ export function Footer() {
                 <TransitionLink
                   key={item.href}
                   href={item.href}
-                  className="inline-flex min-h-11 items-center font-mono text-meta uppercase tracking-[0.14em] text-ink-2 transition-colors hover:text-ink pointer-fine:min-h-0"
+                  className="inline-flex min-h-11 items-center text-body text-ink-2 transition-colors hover:text-ink pointer-fine:min-h-0"
                 >
                   {item.label}
                 </TransitionLink>

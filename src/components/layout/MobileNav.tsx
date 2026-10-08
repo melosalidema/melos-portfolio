@@ -105,7 +105,7 @@ export function MobileNav({
         {site.nav.map((item, index) => (
           <motion.div key={item.href} variants={itemVariants}>
             <TransitionLink
-              ref={index === 0 ? firstLinkRef : index === site.nav.length - 1 ? lastLinkRef : undefined}
+              ref={index === 0 ? firstLinkRef : undefined}
               href={item.href}
               onClick={() => {
                 // Start Lenis before closing so its anchor handler (window click
@@ -121,7 +121,11 @@ export function MobileNav({
         ))}
         <motion.div variants={itemVariants} className="rule mt-10 pt-6">
           <div className="flex flex-col gap-2 font-mono text-meta uppercase tracking-[0.14em] text-ink-3">
-            <a href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center hover:text-ink">
+            <a
+              ref={lastLinkRef}
+              href={`mailto:${site.email}`}
+              className="inline-flex min-h-11 items-center hover:text-ink"
+            >
               {site.email}
             </a>
             <span className="inline-flex min-h-11 items-center gap-2">

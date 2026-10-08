@@ -27,7 +27,7 @@ export function SectionHead({
       <MaskedLines
         as="h2"
         lines={[title]}
-        className="font-display mt-7 text-h2 leading-[1.08] tracking-[-0.01em] max-w-[18ch]"
+        className="font-display mt-7 text-h2 leading-[1.08] tracking-[-0.01em] text-balance max-w-[18ch]"
       />
       {lede ? <p className="mt-5 max-w-[56ch] text-body text-ink-2">{lede}</p> : null}
     </header>

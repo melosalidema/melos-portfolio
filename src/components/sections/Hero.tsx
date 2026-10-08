@@ -108,8 +108,8 @@ export function Hero() {
           transition={{ duration: DUR.mid, delay: 1.1 }}
           className="flex flex-wrap items-end justify-between gap-6"
         >
-          <MetaLabel className="inline-flex items-center gap-3">
-            <span aria-hidden="true" className="size-1.5 shrink-0 rounded-full bg-accent" />
+          <MetaLabel className="inline-flex items-start gap-3">
+            <span aria-hidden="true" className="mt-1.5 size-1.5 shrink-0 rounded-full bg-accent" />
             <AnimatePresence mode="wait" initial={false}>
               {showGreeting ? (
                 <motion.span key="sq" exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.3 }}>

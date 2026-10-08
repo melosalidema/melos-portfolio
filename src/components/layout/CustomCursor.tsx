@@ -67,7 +67,7 @@ export function CustomCursor() {
       className="pointer-events-none fixed left-0 top-0 z-[90]"
     >
       <div
-        className={`flex -translate-x-1/2 -translate-y-1/2 items-center justify-center transition-[width,height,opacity,background-color,border-color] duration-300 ease-out ${
+        className={`flex -translate-x-1/2 -translate-y-1/2 items-center justify-center ring-1 ring-paper/60 transition-[width,height,opacity,background-color,border-color] duration-300 ease-out ${
           visible ? "opacity-100" : "opacity-0"
         } ${
           variant === "view"
