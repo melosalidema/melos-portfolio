@@ -271,45 +271,6 @@ export const projects: Project[] = [
     index: "06",
   },
   {
-    slug: "codevio",
-    name: "Codevio",
-    tagline: "The agency platform for our own studio",
-    type: "Marketing site",
-    year: "2026",
-    role: "Front-end development",
-    summary:
-      "A responsive platform presenting Codevio's web development services — with an interactive animation layer and 3D visuals.",
-    description: [
-      "Codevio is the agency platform for our own studio — the place where client work starts with a conversation about what we build and how.",
-      "A React + Vite front end with a Tailwind v4 token system, GSAP and Motion for the animation layer, and React Three Fiber moments used sparingly — 3D as punctuation, never wallpaper.",
-    ],
-    features: [
-      {
-        title: "Motion system",
-        text: "GSAP and Motion-driven reveals, marquee and hover states tuned to one easing language.",
-      },
-      {
-        title: "3D moments",
-        text: "React Three Fiber scenes used as punctuation points in the scroll, not as decoration.",
-      },
-      {
-        title: "Design system",
-        text: "Tailwind CSS v4 tokens, Radix primitives, a single radius, and a type scale that holds up.",
-      },
-    ],
-    stack: ["React", "Vite", "Tailwind CSS", "GSAP", "Motion", "Three.js"],
-    live: "https://codeviodev.netlify.app/",
-    image: "/work/codevio.webp",
-    imageMobile: "/work/codevio-mobile.webp",
-    interior: {
-      src: "/work/codevio-interior.webp",
-      alt: "Codevio launch sprints — four engagement cards with durations, prices and scope notes",
-      caption: "Inside — launch sprints: fixed scope and timeline, priced up front.",
-    },
-    alt: "Codevio homepage — a 3D lanyard badge suspended over a red and black split stage",
-    index: "07",
-  },
-  {
     slug: "copper-kitchen",
     name: "Copper Kitchen",
     tagline: "Restaurant platform with an owner admin",
@@ -350,6 +311,6 @@ export const projects: Project[] = [
       caption: "Inside — the menu, served from the owner's dashboard.",
     },
     alt: "Copper Kitchen homepage — a dark food photograph with elegant serif type and copper accents",
-    index: "08",
+    index: "07",
   },
 ];

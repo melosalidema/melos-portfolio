@@ -45,7 +45,7 @@ export function About() {
             <p>
               I&rsquo;m Melos — a full-stack developer based in Pozheran, Kosovo. I study computer
               science at the University of Prishtina, and I spend most of my time building real
-              products: marketplaces, storefronts, platforms. Eight of them are on this page.
+              products: marketplaces, storefronts, platforms. Seven of them are on this page.
             </p>
             <p>
               I like the whole stack — designing the schema, writing the API, building the
