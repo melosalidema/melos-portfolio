@@ -39,7 +39,7 @@
 
 ## Background
 
-`FieldCanvas`: ≤88 particles desktop / 34 mobile, ink at ≤0.11 alpha, 140px mouse repel, pauses when the tab is hidden, DPR ≤2. Plus a fixed 4% grain overlay (multiply). That is the entire background system — one field, one texture.
+`FieldCanvas`: ≤180 particles desktop / 70 mobile, ink at ≤0.11 alpha, 140px mouse repel, pauses when the tab is hidden, DPR ≤2. Plus a fixed 4% grain overlay (multiply). That is the entire background system — one field, one texture.
 
 ## Responsive principles
 
