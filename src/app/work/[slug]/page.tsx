@@ -141,6 +141,30 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         </div>
       </div>
 
+      {project.interior ? (
+        <div className="px-gutter pb-section">
+          <Reveal className="mx-auto w-full max-w-[1500px]">
+            <figure>
+              <div className="overflow-hidden border border-line bg-surface">
+                {/* eslint-disable-next-line @next/next/no-img-element -- static export, images intentionally unoptimized */}
+                <img
+                  src={project.interior.src}
+                  alt={project.interior.alt}
+                  width={1440}
+                  height={900}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full"
+                />
+              </div>
+              <figcaption className="mt-4">
+                <MetaLabel>{project.interior.caption}</MetaLabel>
+              </figcaption>
+            </figure>
+          </Reveal>
+        </div>
+      ) : null}
+
       <div className="px-gutter">
         <div className="mx-auto w-full max-w-[1500px]">
           <div className="rule grid gap-10 pt-10 md:grid-cols-2 md:gap-x-20">

@@ -1,5 +1,7 @@
 export type ProjectFeature = { title: string; text: string };
 
+export type ProjectInterior = { src: string; alt: string; caption: string };
+
 export type Project = {
   slug: string;
   name: string;
@@ -16,6 +18,7 @@ export type Project = {
   repo?: string;
   image: string;
   imageMobile: string;
+  interior?: ProjectInterior;
   alt: string;
   index: string;
 };
@@ -57,6 +60,11 @@ export const projects: Project[] = [
     repo: "https://github.com/melosalidema/stay-in-kosovo",
     image: "/work/stay-in-kosovo.webp",
     imageMobile: "/work/stay-in-kosovo-mobile.webp",
+    interior: {
+      src: "/work/stay-in-kosovo-interior.webp",
+      alt: "Stay in Kosovo discover page — 'What are you in the mood for?' filter chips above recommendation cards",
+      caption: "Inside — mood discovery, and the places it surfaces.",
+    },
     alt: "Stay in Kosovo homepage — 'Find your next place in Kosovo' with an editorial layout and green accents",
     index: "01",
   },
@@ -172,6 +180,11 @@ export const projects: Project[] = [
     live: "https://geo-land.netlify.app/",
     image: "/work/geo-land.webp",
     imageMobile: "/work/geo-land-mobile.webp",
+    interior: {
+      src: "/work/geo-land-interior.webp",
+      alt: "Geo&Land Kosova project register — documented projects with orthophoto plates and descriptions",
+      caption: "Inside — the project register: the company's documented works.",
+    },
     alt: "Geo&Land Kosova homepage — 'Ground truth, measured precisely' in bold grotesk over an orthophoto plate with topographic contour lines",
     index: "04",
   },
@@ -210,6 +223,11 @@ export const projects: Project[] = [
     live: "https://godrivekorea.com",
     image: "/work/godrive-korea.webp",
     imageMobile: "/work/godrive-korea-mobile.webp",
+    interior: {
+      src: "/work/godrive-korea-interior.webp",
+      alt: "GoDrive Korea listings page — a grid of used cars with EUR prices and mileage",
+      caption: "Inside — live inventory: listings synced from Korea, priced in EUR.",
+    },
     alt: "GoDrive Korea homepage — bold white type over a dark stage with a car silhouette and red accents",
     index: "05",
   },
@@ -244,6 +262,11 @@ export const projects: Project[] = [
     live: "https://nuraskincare-dev.netlify.app/",
     image: "/work/nura-skin.webp",
     imageMobile: "/work/nura-skin-mobile.webp",
+    interior: {
+      src: "/work/nura-skin-interior.webp",
+      alt: "NŪRA Skin shop page — 'The collection' with eight products and category filters",
+      caption: "Inside — the shop: eight formulas, filterable by category.",
+    },
     alt: "NŪRA Skin homepage — 'Know your skin better' in an editorial serif over warm product photography",
     index: "06",
   },
@@ -278,6 +301,11 @@ export const projects: Project[] = [
     live: "https://codeviodev.netlify.app/",
     image: "/work/codevio.webp",
     imageMobile: "/work/codevio-mobile.webp",
+    interior: {
+      src: "/work/codevio-interior.webp",
+      alt: "Codevio launch sprints — four engagement cards with durations, prices and scope notes",
+      caption: "Inside — launch sprints: fixed scope and timeline, priced up front.",
+    },
     alt: "Codevio homepage — a 3D lanyard badge suspended over a red and black split stage",
     index: "07",
   },
@@ -316,6 +344,11 @@ export const projects: Project[] = [
     live: "https://copperkitchen.netlify.app/",
     image: "/work/copper-kitchen.webp",
     imageMobile: "/work/copper-kitchen-mobile.webp",
+    interior: {
+      src: "/work/copper-kitchen-interior.webp",
+      alt: "Copper Kitchen menu page — starters, mains and desserts with prices beside a food photograph",
+      caption: "Inside — the menu, served from the owner's dashboard.",
+    },
     alt: "Copper Kitchen homepage — a dark food photograph with elegant serif type and copper accents",
     index: "08",
   },
