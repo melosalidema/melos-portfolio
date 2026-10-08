@@ -1,7 +1,7 @@
 "use client";
 import { TransitionLink } from "@/components/layout/TransitionLink";
 import { MetaLabel } from "@/components/ui/MetaLabel";
-import type { Project } from "@/content/projects";
+import { projects, type Project } from "@/content/projects";
 
 /**
  * A single numbered "plate" in the work stack. On large screens plates are
@@ -13,7 +13,9 @@ export function ProjectPlate({ project, order }: { project: Project; order: numb
     <article className="lg:sticky" style={{ top: `calc(4.5rem + ${order * 12}px)` }}>
       <div className="border border-line bg-surface">
         <div className="flex items-center justify-between gap-4 border-b border-line px-5 py-3">
-          <MetaLabel>{project.index} / 05</MetaLabel>
+          <MetaLabel>
+            {project.index} / {String(projects.length).padStart(2, "0")}
+          </MetaLabel>
           <MetaLabel className="hidden sm:block">{project.type}</MetaLabel>
           <MetaLabel>{project.year}</MetaLabel>
         </div>

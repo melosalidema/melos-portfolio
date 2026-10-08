@@ -2,7 +2,7 @@
 
 ## Offer
 
-A personal portfolio and five case studies for **Melos Alidema**, full-stack developer (Pozheran, Kosovo). Goal: win full-stack roles and freelance work by showing real, live products and the craft behind them.
+A personal portfolio and six case studies for **Melos Alidema**, full-stack developer (Pozheran, Kosovo). Goal: win full-stack roles and freelance work by showing real, live products and the craft behind them.
 
 ## Users & jobs
 
@@ -15,7 +15,7 @@ A personal portfolio and five case studies for **Melos Alidema**, full-stack dev
 ## Facts vs assumptions
 
 **Facts (verifiable):**
-- Five live products: stayinkosovo.netlify.app, nuraskincare-dev.netlify.app, codevio.net, godrivekorea.com, copperkitchen.netlify.app — all verified live on 2026-10-08.
+- Six products: stayinkosovo.netlify.app, nuraskincare-dev.netlify.app, codeviodev.netlify.app, godrivekorea.com, copperkitchen.netlify.app — all verified live on 2026-10-08; Fixpoint's public artifact is its demo video (the repository is private).
 - stay-in-kosovo repository is public on GitHub.
 - Role history, education, certificates, languages: from the user's own CV.
 - Contact details: from the user's own CV.

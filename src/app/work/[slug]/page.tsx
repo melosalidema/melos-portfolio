@@ -61,7 +61,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
           <div className="rule mt-6 flex items-baseline justify-between gap-6 pt-6">
             <MetaLabel>
-              {project.index} / 05 — {project.type}
+              {project.index} / {String(projects.length).padStart(2, "0")} — {project.type}
             </MetaLabel>
             <MetaLabel>{project.year}</MetaLabel>
           </div>
@@ -97,7 +97,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                     external
                     className="text-body text-ink transition-colors hover:text-accent pointer-fine:min-h-0"
                   >
-                    Live site
+                    {project.liveLabel ?? "Live site"}
                   </ArrowLink>
                 ) : null}
                 {project.repo ? (

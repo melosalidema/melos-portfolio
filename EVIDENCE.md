@@ -7,7 +7,9 @@ Unsupported claims must not ship; flagged items need the owner's confirmation.
 |---|---|---|---|---|
 | "Stay in Kosovo" is a live tourism & mobility platform | Home plate 01; `/work/stay-in-kosovo` | https://stayinkosovo.netlify.app/ (checked 2026-10-08; screenshot in `public/work/`) | high | as written |
 | NŪRA Skin storefront is live | Home plate 02; case study | https://nuraskincare-dev.netlify.app/ (checked 2026-10-08) | high | as written |
-| Codevio agency platform is live | Home plate 03; case study | https://codevio.net/ (checked 2026-10-08) | high | as written |
+| Fixpoint is a multi-app AI agent built for the Multi-App AI Agent Hackathon 2026 | Home plate 03; case study | Local repo `Codevio-FixPoint` (private) README + SUBMISSION.md; public demo video https://youtu.be/0u5WcobheGo (checked 2026-10-08) | high (existence) | as written |
+| Fixpoint: "16/16 evaluation scenarios pass, zero unsafe mutations" | Fixpoint case study | The project's own SUBMISSION.md build output (reproducible via `python -m app.evals.runner`) | self-reported build result | as written |
+| Codevio agency platform is live | Home plate 04; case study | https://codeviodev.netlify.app/ (checked 2026-10-08) | high | as written |
 | GoDrive Korea marketplace is live | Home plate 04; case study | https://godrivekorea.com (checked 2026-10-08) | high | as written |
 | Copper Kitchen platform is live | Home plate 05; case study | https://copperkitchen.netlify.app/ (checked 2026-10-08) | high | as written |
 | stay-in-kosovo source is public | Case study "Repository" link | https://github.com/melosalidema/stay-in-kosovo | high | as written |
@@ -19,5 +21,5 @@ Unsupported claims must not ship; flagged items need the owner's confirmation.
 | "I answer within a day" | Contact copy | **Assumption — confirm before launch** | medium | keep or adjust |
 
 Notes:
-- No metrics, client counts, testimonials or awards appear anywhere except the MicroBit certificate from the CV.
+- No metrics, client counts, testimonials or awards appear anywhere except the MicroBit certificate from the CV and Fixpoint's evaluation results, which are the project's own reproducible build output.
 - Project screenshots in `public/work/` are direct captures of the live sites, taken 2026-10-08.

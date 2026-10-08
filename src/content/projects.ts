@@ -12,6 +12,7 @@ export type Project = {
   features: ProjectFeature[];
   stack: string[];
   live?: string;
+  liveLabel?: string;
   repo?: string;
   image: string;
   imageMobile: string;
@@ -94,6 +95,45 @@ export const projects: Project[] = [
     index: "02",
   },
   {
+    slug: "fixpoint",
+    name: "Fixpoint",
+    tagline: "A multi-app AI agent that proves its work",
+    type: "AI agent platform",
+    year: "2026",
+    role: "Design & full-stack development",
+    summary:
+      "An agent that resolves customer exceptions across billing, inbox, CRM, chat and docs — and proves it against real system state before claiming success.",
+    description: [
+      "Fixpoint handles the messy end of customer support — double charges, refunds, escalations — across five connected apps: Stripe, Gmail, Slack, HubSpot and Google Drive. Built for the Multi-App AI Agent Hackathon 2026.",
+      "The engineering is in what stops it: a deny-by-default action gateway, HMAC-signed single-use approvals bound to an action hash, a hash-chained audit ledger, and an independent verifier that re-reads provider state after every mutation. An S1–S16 evaluation matrix scores every run — 16/16 passing, zero unsafe mutations.",
+    ],
+    features: [
+      {
+        title: "Sealed context",
+        text: "Tenant, actor, capabilities and the amount envelope are assembled server-side; the model can never name a tenant or change its authority.",
+      },
+      {
+        title: "Bound approvals",
+        text: "Money above the envelope pauses for a human. Approvals are HMAC-signed, single-use, expiring — and any change voids them.",
+      },
+      {
+        title: "Independent verification",
+        text: "After every mutation, a verifier re-reads real provider state; claims that cannot be grounded fail the run.",
+      },
+      {
+        title: "Tamper-evident audit",
+        text: "Every plan, decision, tool call and verification is hash-chained — breaking one entry is detectable at the exact index.",
+      },
+    ],
+    stack: ["Python", "FastAPI", "PostgreSQL", "React", "TypeScript", "Docker"],
+    live: "https://youtu.be/0u5WcobheGo",
+    liveLabel: "Demo video",
+    image: "/work/fixpoint.webp",
+    imageMobile: "/work/fixpoint-mobile.webp",
+    alt: "Fixpoint operator console — a dark interface showing an agent run with approvals, verification and audit trail",
+    index: "03",
+  },
+  {
     slug: "codevio",
     name: "Codevio",
     tagline: "The agency platform for our own studio",
@@ -121,11 +161,11 @@ export const projects: Project[] = [
       },
     ],
     stack: ["React", "Vite", "Tailwind CSS", "GSAP", "Motion", "Three.js"],
-    live: "https://codevio.net/",
+    live: "https://codeviodev.netlify.app/",
     image: "/work/codevio.webp",
     imageMobile: "/work/codevio-mobile.webp",
-    alt: "Codevio homepage — 'Build Full-Stack Applications Faster with codevio' on a dark stage with a red glow",
-    index: "03",
+    alt: "Codevio homepage — a 3D lanyard badge suspended over a red and black split stage",
+    index: "04",
   },
   {
     slug: "godrive-korea",
@@ -163,7 +203,7 @@ export const projects: Project[] = [
     image: "/work/godrive-korea.webp",
     imageMobile: "/work/godrive-korea-mobile.webp",
     alt: "GoDrive Korea homepage — bold white type over a dark stage with a car silhouette and red accents",
-    index: "04",
+    index: "05",
   },
   {
     slug: "copper-kitchen",
@@ -201,6 +241,6 @@ export const projects: Project[] = [
     image: "/work/copper-kitchen.webp",
     imageMobile: "/work/copper-kitchen-mobile.webp",
     alt: "Copper Kitchen homepage — a dark food photograph with elegant serif type and copper accents",
-    index: "05",
+    index: "06",
   },
 ];
