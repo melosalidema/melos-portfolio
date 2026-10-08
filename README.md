@@ -37,6 +37,9 @@ docs/plans/         implementation plan
   Site configuration → Environment variables). Without it, canonical/OG URLs and the
   sitemap fall back to relative paths.
 - Replace `/public/og.png` with a 1200×630 social image (a hero screenshot works).
+- `public/melos-alidema-cv.pdf` is the downloadable CV served by the hero CTA. When the CV
+  changes, regenerate `Melos_Alidema_CV.pdf` (from `OneDrive/Desktop/Melos_Alidema_CV.html`) and
+  copy it over this file.
 
 ## Deploying (Netlify)
 

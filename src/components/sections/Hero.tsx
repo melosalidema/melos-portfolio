@@ -99,6 +99,23 @@ export function Hero() {
             >
               Get in touch
             </ArrowLink>
+            <a
+              href="/melos-alidema-cv.pdf"
+              download="Melos_Alidema_CV.pdf"
+              className="group/dl inline-flex min-h-11 items-center gap-2 font-mono text-meta uppercase tracking-[0.14em] text-ink-2 transition-colors hover:text-ink pointer-fine:min-h-0"
+            >
+              Download CV
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                className="h-3.5 w-3.5 transition-transform duration-300 group-hover/dl:translate-y-0.5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
+                <path d="M8 1v11M3 7l5 5 5-5M2 15h12" />
+              </svg>
+            </a>
           </motion.div>
         </div>
 
