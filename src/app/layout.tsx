@@ -3,9 +3,8 @@ import { Fraunces, Geist_Mono, Instrument_Sans } from "next/font/google";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
-import { CustomCursor } from "@/components/layout/CustomCursor";
-import { FieldCanvas } from "@/components/layout/FieldCanvas";
 import { RouteCurtain } from "@/components/layout/RouteCurtain";
+import { SITE_URL } from "@/lib/site-url";
 import "./globals.css";
 
 const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces", display: "swap" });
@@ -15,22 +14,11 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono"
 const description =
   "Melos Alidema is a full-stack developer in Kosovo building complete web products — marketplaces, storefronts and platforms — with React, Next.js, TypeScript and PostgreSQL.";
 
-// TODO: set NEXT_PUBLIC_SITE_URL before launch
-function parseSiteUrl(value: string | undefined): URL | undefined {
-  if (!value) return undefined;
-  try {
-    const url = new URL(value);
-    if (url.protocol === "http:" || url.protocol === "https:") return url;
-  } catch {
-    // fall through to the error below
-  }
-  throw new Error(`NEXT_PUBLIC_SITE_URL must be an absolute URL, got "${value}"`);
-}
-
-const metadataBase = parseSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
+// Canonical origin comes from src/lib/site-url.ts (env var or live-domain fallback).
+const metadataBase = new URL(SITE_URL);
 
 export const metadata: Metadata = {
-  ...(metadataBase ? { metadataBase } : {}),
+  metadataBase,
   title: {
     default: "Melos Alidema — Full-Stack Developer",
     template: "%s — Melos Alidema",
@@ -55,6 +43,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${fraunces.variable} ${instrument.variable} ${geistMono.variable}`}>
       <body className="grain">
+        {/* Entrance states are inline `opacity:0`; without JS they must not hide content. */}
+        <noscript>
+          <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1 !important}[style*="transform:translate"]{transform:none !important}`}</style>
+        </noscript>
         <SmoothScroll>
           <a
             href="#main"
@@ -62,13 +54,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           >
             Skip to content
           </a>
-          <FieldCanvas />
           <Nav />
           <div className="relative z-10">
             {children}
             <Footer />
           </div>
-          <CustomCursor />
           <RouteCurtain />
         </SmoothScroll>
       </body>

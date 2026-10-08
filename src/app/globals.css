@@ -34,7 +34,6 @@
   --duration-fast: 300ms;
   --duration-mid: 600ms;
   --duration-slow: 900ms;
-  --animate-marquee: marquee 70s linear infinite;
 }
 
 html {
@@ -62,12 +61,6 @@ body {
 /* The skip link is the focus indicator; avoid a page-wide outline after a keyboard skip. */
 #main:focus-visible {
   outline: none;
-}
-
-/* Custom cursor active: hide the native one (fine pointers only, set from JS) */
-html.custom-cursor,
-html.custom-cursor * {
-  cursor: none;
 }
 
 .font-display {
@@ -101,12 +94,6 @@ html.custom-cursor * {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-}
-
-@keyframes marquee {
-  to {
-    transform: translateX(-25%);
   }
 }
 

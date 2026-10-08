@@ -26,7 +26,6 @@ export function ProjectPlate({ project, order }: { project: Project; order: numb
               href={`/work/${project.slug}`}
               aria-hidden="true"
               tabIndex={-1}
-              data-cursor="view"
               className="group block h-full"
             >
               {/* eslint-disable-next-line @next/next/no-img-element -- static export, images intentionally unoptimized */}
